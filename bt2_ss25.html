@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập vào số nguyên dương a");
+        let b = +prompt("Nhập vào số nguyên dương b");
+        let even =0, odd=0;
+        even = parseInt(even);
+        odd = parseInt(odd);
+
+        if( a < 0 || b < 0 || b <= a){
+            console.log("Số nhập vào không hợp lệ");
+        }else{
+            for(let i = a + 1; i < b; i++){
+                if(i % 2 == 0){
+                    even += i;
+                }else{
+                    odd += i;
+                }
+            }
+            console.log("Tổng các số chẵn= " + even);
+            console.log("Tổng các số lẻ= " + odd);
+        }
+    </script>
+</body>
+</html>

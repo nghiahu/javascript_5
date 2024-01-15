@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var n, rev;
+  n = +prompt("Nhập vào một số nguyên dương n:");
+  if (n <= 0 || isNaN(n)) {
+    console.log("Không hợp lệ");
+  }
+rev = 0;
+while (n > 0) {
+  var last = n % 10;
+  rev = rev * 10 + last;
+  n = Math.floor(n / 10);
+}
+console.log("Số đảo ngược của n là: " + rev);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = +prompt("Nhập vào một số nguyên dương bất kỳ");
+        let sum = 0;
+        sum = parseInt(sum);
+        if(number > 0){
+        for(let i = 1; i <= number-1 ;i++){
+            console.log(i);
+            sum += i;
+        }
+        if(sum % 2 == 0){
+            console.log(number);
+            sum = sum + number;
+        }
+        console.log(sum);
+    }else{
+        console.log("Không có số ");
+    }
+    </script>
+</body>
+</html>

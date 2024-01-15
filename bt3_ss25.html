@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhập vào số nguyên dương n");
+        let sum = 0,m=0;
+
+        for(let i = 1; i < n; i++){
+            sum += i;
+            m += 1;
+            if(sum >= n){
+                m = m - 1;
+                break;
+            } 
+        }
+        console.log("m = " + m);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  num = +prompt("Nhập vào một số nguyên dương bất kỳ:");
+  if (num <= 0 || isNaN(num)) {
+    console.log("Không hợp lệ");
+  }
+sum = 0;
+for (var i = 2; i <= num; i += 2) {
+  var square = i * i;
+  if (sum + square < num) {
+    console.log(square);
+    sum += square;
+  } else {
+    break;
+  }
+}
+console.log("Tổng các bình phương là: " + sum);
+</script>
+</body>
+</html>
